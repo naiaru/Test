@@ -10,65 +10,65 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	if (Hls.isSupported()) {
 		let hls_main = new Hls();
-		hls_main.loadSource('./asset/images/web_main.m3u8');
+		hls_main.loadSource('https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_main.m3u8');
 		hls_main.attachMedia(web_main);
 
 		let hls_01 = new Hls();
-		hls_01.loadSource('./asset/images/web_01.m3u8');
+		hls_01.loadSource('https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_01.m3u8');
 		hls_01.attachMedia(web_01);
 
 		let hls_02 = new Hls();
-		hls_02.loadSource('./asset/images/web_02.m3u8');
+		hls_02.loadSource('https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_02.m3u8');
 		hls_02.attachMedia(web_02);
 
 		let hls_03 = new Hls();
-		hls_03.loadSource('./asset/images/web_03.m3u8');
+		hls_03.loadSource('https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_03.m3u8');
 		hls_03.attachMedia(web_03);
 
 		let hls_04 = new Hls();
-		hls_04.loadSource('./asset/images/web_04.m3u8');
+		hls_04.loadSource('https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_04.m3u8');
 		hls_04.attachMedia(web_04);
 
 		let hls_05 = new Hls();
-		hls_05.loadSource('./asset/images/web_05.m3u8');
+		hls_05.loadSource('https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_05.m3u8');
 		hls_05.attachMedia(web_05);
 
 		let hls_06 = new Hls();
-		hls_06.loadSource('./asset/images/web_06.m3u8');
+		hls_06.loadSource('https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_06.m3u8');
 		hls_06.attachMedia(web_06);
 
-	} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-		web_main.src = './asset/images/web_main.m3u8';
+	} else {
+		web_main.src = 'https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_main.m3u8';
 		web_main.addEventListener('canplay', () => {
 			web_main.play();
 		});
 
-		web_01.src = './asset/images/web_01.m3u8';
+		web_01.src = 'https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_01.m3u8';
 		web_01.addEventListener('canplay', () => {
 			web_01.play();
 		});
 
-		web_02.src = './asset/images/web_02.m3u8';
+		web_02.src = 'https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_02.m3u8';
 		web_02.addEventListener('canplay', () => {
 			web_02.play();
 		});
 
-		web_03.src = './asset/images/web_03.m3u8';
+		web_03.src = 'https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_03.m3u8';
 		web_03.addEventListener('canplay', () => {
 			web_03.play();
 		});
 
-		web_04.src = './asset/images/web_04.m3u8';
+		web_04.src = 'https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_04.m3u8';
 		web_04.addEventListener('canplay', () => {
 			web_04.play();
 		});
 
-		web_05.src = './asset/images/web_05.m3u8';
+		web_05.src = 'https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_05.m3u8';
 		web_05.addEventListener('canplay', () => {
 			web_05.play();
 		});
 
-		web_06.src = './asset/images/web_06.m3u8';
+		web_06.src = 'https://naiaru.github.io/Test/4dc5011f5f08f9c5fecc66bd9751b0e10dc8ddaca7f2dd4fd340835f996cfa96/asset/images/web_06.m3u8';
 		web_06.addEventListener('canplay', () => {
 			web_06.play();
 		});
